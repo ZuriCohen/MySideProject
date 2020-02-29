@@ -15,6 +15,7 @@
 		0B15FDDF2406EDDA005AAEC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B15FDDD2406EDDA005AAEC7 /* LaunchScreen.storyboard */; };
 		0B15FDE72406FBD7005AAEC7 /* DeviceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B15FDE62406FBD7005AAEC7 /* DeviceListViewController.swift */; };
 		0B2E7616240797000059E784 /* DeviceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2E7615240797000059E784 /* DeviceListViewModel.swift */; };
+		0B2E761924079B260059E784 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2E761824079B260059E784 /* Device.swift */; };
 		4834AD1758E9FB683BC1FF43 /* Pods_MySideProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C922F43061409A3A87217E /* Pods_MySideProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		0B15FDE02406EDDA005AAEC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B15FDE62406FBD7005AAEC7 /* DeviceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewController.swift; sourceTree = "<group>"; };
 		0B2E7615240797000059E784 /* DeviceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewModel.swift; sourceTree = "<group>"; };
+		0B2E761824079B260059E784 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		84C922F43061409A3A87217E /* Pods_MySideProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySideProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E47414F31391FCAA7F22BD67 /* Pods-MySideProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySideProject.debug.xcconfig"; path = "Target Support Files/Pods-MySideProject/Pods-MySideProject.debug.xcconfig"; sourceTree = "<group>"; };
 		F02CBFDBFC85560EEA4A828B /* Pods-MySideProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySideProject.release.xcconfig"; path = "Target Support Files/Pods-MySideProject/Pods-MySideProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,7 +69,9 @@
 		0B15FDD12406EDD8005AAEC7 /* MySideProject */ = {
 			isa = PBXGroup;
 			children = (
-				0B15FDE82407059E005AAEC7 /* DeviceList */,
+				0B2E761C24079B6D0059E784 /* ViewModels */,
+				0B2E761B24079B600059E784 /* Models */,
+				0B2E761A24079B470059E784 /* Controllers */,
 				0B15FDD22406EDD8005AAEC7 /* AppDelegate.swift */,
 				0B15FDD42406EDD8005AAEC7 /* SceneDelegate.swift */,
 				0B15FDD62406EDD8005AAEC7 /* ViewController.swift */,
@@ -79,13 +83,28 @@
 			path = MySideProject;
 			sourceTree = "<group>";
 		};
-		0B15FDE82407059E005AAEC7 /* DeviceList */ = {
+		0B2E761A24079B470059E784 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				0B15FDE62406FBD7005AAEC7 /* DeviceListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0B2E761B24079B600059E784 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0B2E761824079B260059E784 /* Device.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0B2E761C24079B6D0059E784 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
 				0B2E7615240797000059E784 /* DeviceListViewModel.swift */,
 			);
-			path = DeviceList;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		5D162B47773CC31F370756C5 /* Pods */ = {
@@ -223,6 +242,7 @@
 				0B15FDE72406FBD7005AAEC7 /* DeviceListViewController.swift in Sources */,
 				0B15FDD72406EDD8005AAEC7 /* ViewController.swift in Sources */,
 				0B2E7616240797000059E784 /* DeviceListViewModel.swift in Sources */,
+				0B2E761924079B260059E784 /* Device.swift in Sources */,
 				0B15FDD32406EDD8005AAEC7 /* AppDelegate.swift in Sources */,
 				0B15FDD52406EDD8005AAEC7 /* SceneDelegate.swift in Sources */,
 			);

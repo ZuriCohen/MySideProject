@@ -1,5 +1,5 @@
 //
-//  DeviceListViewModel.swift
+//  Device.swift
 //  MySideProject
 //
 //  Created by zuri cohen on 2/27/20.
@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+struct Device {
+    let name: String
+    let isConnected: Bool
+}
