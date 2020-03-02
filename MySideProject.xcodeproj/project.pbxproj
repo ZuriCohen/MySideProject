@@ -14,6 +14,8 @@
 		0B15FDDC2406EDDA005AAEC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B15FDDB2406EDDA005AAEC7 /* Assets.xcassets */; };
 		0B15FDDF2406EDDA005AAEC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B15FDDD2406EDDA005AAEC7 /* LaunchScreen.storyboard */; };
 		0B15FDE72406FBD7005AAEC7 /* DeviceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B15FDE62406FBD7005AAEC7 /* DeviceListViewController.swift */; };
+		0B2DD320240D0BD600602032 /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2DD31E240D0BD600602032 /* DeviceTableViewCell.swift */; };
+		0B2DD321240D0BD600602032 /* DeviceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B2DD31F240D0BD600602032 /* DeviceTableViewCell.xib */; };
 		0B2E7616240797000059E784 /* DeviceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2E7615240797000059E784 /* DeviceListViewModel.swift */; };
 		0B2E761924079B260059E784 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2E761824079B260059E784 /* Device.swift */; };
 		4834AD1758E9FB683BC1FF43 /* Pods_MySideProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C922F43061409A3A87217E /* Pods_MySideProject.framework */; };
@@ -29,6 +31,8 @@
 		0B15FDDE2406EDDA005AAEC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B15FDE02406EDDA005AAEC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B15FDE62406FBD7005AAEC7 /* DeviceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewController.swift; sourceTree = "<group>"; };
+		0B2DD31E240D0BD600602032 /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableViewCell.swift; sourceTree = "<group>"; };
+		0B2DD31F240D0BD600602032 /* DeviceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceTableViewCell.xib; sourceTree = "<group>"; };
 		0B2E7615240797000059E784 /* DeviceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewModel.swift; sourceTree = "<group>"; };
 		0B2E761824079B260059E784 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		84C922F43061409A3A87217E /* Pods_MySideProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySideProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +73,7 @@
 		0B15FDD12406EDD8005AAEC7 /* MySideProject */ = {
 			isa = PBXGroup;
 			children = (
+				0B2DD31D240D05F500602032 /* DeviceTableViewCell */,
 				0B2E761C24079B6D0059E784 /* ViewModels */,
 				0B2E761B24079B600059E784 /* Models */,
 				0B2E761A24079B470059E784 /* Controllers */,
@@ -81,6 +86,15 @@
 				0B15FDE02406EDDA005AAEC7 /* Info.plist */,
 			);
 			path = MySideProject;
+			sourceTree = "<group>";
+		};
+		0B2DD31D240D05F500602032 /* DeviceTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0B2DD31E240D0BD600602032 /* DeviceTableViewCell.swift */,
+				0B2DD31F240D0BD600602032 /* DeviceTableViewCell.xib */,
+			);
+			path = DeviceTableViewCell;
 			sourceTree = "<group>";
 		};
 		0B2E761A24079B470059E784 /* Controllers */ = {
@@ -187,6 +201,7 @@
 				0B15FDDF2406EDDA005AAEC7 /* LaunchScreen.storyboard in Resources */,
 				0B15FDDC2406EDDA005AAEC7 /* Assets.xcassets in Resources */,
 				0B15FDDA2406EDD8005AAEC7 /* Main.storyboard in Resources */,
+				0B2DD321240D0BD600602032 /* DeviceTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +260,7 @@
 				0B2E761924079B260059E784 /* Device.swift in Sources */,
 				0B15FDD32406EDD8005AAEC7 /* AppDelegate.swift in Sources */,
 				0B15FDD52406EDD8005AAEC7 /* SceneDelegate.swift in Sources */,
+				0B2DD320240D0BD600602032 /* DeviceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

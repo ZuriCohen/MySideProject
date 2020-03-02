@@ -10,5 +10,5 @@ import Foundation
 
 struct Device {
     let name: String
-    let isConnected: Bool
+    var isConnected: Bool
 }
