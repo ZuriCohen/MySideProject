@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import JGProgressHUD
 
 class DeviceTableViewCell: UITableViewCell {
     
@@ -16,6 +17,15 @@ class DeviceTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        
+        /*TODO: add progresshud to the project
+        let hud = JGProgressHUD(style: .dark)
+        hud.textLabel.text = "Loading"
+        hud.show(in: self.btnConnect)
+        hud.dismiss(afterDelay: 3.0)
+        */
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -14,6 +14,7 @@
 		0B15FDDC2406EDDA005AAEC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B15FDDB2406EDDA005AAEC7 /* Assets.xcassets */; };
 		0B15FDDF2406EDDA005AAEC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B15FDDD2406EDDA005AAEC7 /* LaunchScreen.storyboard */; };
 		0B15FDE72406FBD7005AAEC7 /* DeviceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B15FDE62406FBD7005AAEC7 /* DeviceListViewController.swift */; };
+		0B2C28CD2412AF2D00D5DBBD /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2C28CC2412AF2D00D5DBBD /* PopupViewController.swift */; };
 		0B2DD320240D0BD600602032 /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2DD31E240D0BD600602032 /* DeviceTableViewCell.swift */; };
 		0B2DD321240D0BD600602032 /* DeviceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B2DD31F240D0BD600602032 /* DeviceTableViewCell.xib */; };
 		0B2E7616240797000059E784 /* DeviceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2E7615240797000059E784 /* DeviceListViewModel.swift */; };
@@ -31,6 +32,7 @@
 		0B15FDDE2406EDDA005AAEC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B15FDE02406EDDA005AAEC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B15FDE62406FBD7005AAEC7 /* DeviceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewController.swift; sourceTree = "<group>"; };
+		0B2C28CC2412AF2D00D5DBBD /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 		0B2DD31E240D0BD600602032 /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableViewCell.swift; sourceTree = "<group>"; };
 		0B2DD31F240D0BD600602032 /* DeviceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceTableViewCell.xib; sourceTree = "<group>"; };
 		0B2E7615240797000059E784 /* DeviceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewModel.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				0B15FDDB2406EDDA005AAEC7 /* Assets.xcassets */,
 				0B15FDDD2406EDDA005AAEC7 /* LaunchScreen.storyboard */,
 				0B15FDE02406EDDA005AAEC7 /* Info.plist */,
+				0B2C28CC2412AF2D00D5DBBD /* PopupViewController.swift */,
 			);
 			path = MySideProject;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				0B15FDD32406EDD8005AAEC7 /* AppDelegate.swift in Sources */,
 				0B15FDD52406EDD8005AAEC7 /* SceneDelegate.swift in Sources */,
 				0B2DD320240D0BD600602032 /* DeviceTableViewCell.swift in Sources */,
+				0B2C28CD2412AF2D00D5DBBD /* PopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,7 +410,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J4Z7QN3M6A;
 				INFOPLIST_FILE = MySideProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -424,7 +430,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J4Z7QN3M6A;
 				INFOPLIST_FILE = MySideProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

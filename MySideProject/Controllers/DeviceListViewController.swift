@@ -9,8 +9,6 @@
 import UIKit
 import RxSwift
 import RxCocoa
-// TODO: add progresshud to the project
-//import JGProgressHUD
 
 
 class DeviceListViewController: UIViewController {
@@ -72,39 +70,44 @@ extension DeviceListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.devices.count
+        
+        
+        self.devices.filter({$0.isConnected})
+        
+        switch section {
+        case 0:
+            return self.devices.filter({$0.isConnected}).count
+        case 1:
+            return self.devices.filter({!$0.isConnected}).count
+        default: break
+           break
+        }
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         
-        //let index = indexPath.row
+        let section = indexPath.section
         
         guard var cell = tableView.dequeueReusableCell(withIdentifier: "DeviceTableViewCell", for: indexPath) as? DeviceTableViewCell else {
             fatalError("Cell is not found")
         }
         
-        cell.lblName.text = self.devices[indexPath.row].name
-        
-        
-        let section = indexPath.section
-        
         if section == 0 {
-            if devices[indexPath.row].isConnected {
-                return cell
-            }
+            let connectedDevices = self.devices.filter({$0.isConnected})
+            cell.lblName.text = connectedDevices[indexPath.row].name
+        } else {
+            let disconnectedDevices = self.devices.filter({!$0.isConnected})
+            cell.lblName.text = disconnectedDevices[indexPath.row].name
+            
         }
         
-        if section == 1 {
-            if !devices[indexPath.row].isConnected {
-                return cell
-            }
-        }
+        return cell
         
-        return UITableViewCell()
-    
-        //let deviceVM = self.deviceListVM.deviceAt(index)
         
+ 
+//        let deviceVM = self.deviceListVM.deviceAt(indexPath.row)
 //        deviceVM.name.asDriver(onErrorJustReturn: "")
 //            .drive(cell.lblName.rx.text)
 //            .disposed(by: disposeBag)
@@ -114,7 +117,30 @@ extension DeviceListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("did tap cell")
-        devices[indexPath.row].isConnected = true
+        
+        ////
+        //show popup
+        
+
+        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "PopupViewController") as? PopupViewController
+        
+        
+        self.present(vc!, animated: true, completion: nil)
+        
+        
+        
+        
+        
+        ////
+        
+//        if devices[indexPath.row].isConnected {
+//            devices[indexPath.row].isConnected = false
+//        } else {
+//            devices[indexPath.row].isConnected = true
+//        }
+        
+        
+        
         self.tableView.reloadData()
     }
 }
